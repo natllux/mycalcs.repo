@@ -4,6 +4,8 @@ import "core:fmt"
 import "core:os"
 import "core:strings"
 import "core:unicode"
+import "core:time"
+
 // File that runs the cycle of the calculator and determine the operation and operators to use.
 
 clear_blank_str :: proc(input: string) -> string {
@@ -42,6 +44,8 @@ main :: proc() {
 			break
 		}
 
+		time.sleep(500)
+
 		// Input Process: Second Operand.
 		fmt.println("Enter the second operand:")
 		n_opr2, err_opr2 := os.read(os.stdin, buf_opr2[:])
@@ -54,6 +58,8 @@ main :: proc() {
 			break
 		}
 
+		time.sleep(500)
+
 		// Input Process: Operator.
 		fmt.println("Enter the operator:")
 		n_opt, err_opt := os.read(os.stdin, buf_opt[:])
@@ -65,6 +71,8 @@ main :: proc() {
 		if strings.to_lower(str_opt) == "exit" {
 			break
 		}
+
+		time.sleep(2000)
 
 		switch(str_opt) {
 			case "+":
@@ -114,5 +122,6 @@ main :: proc() {
 
 	// Exit Message
 	fmt.print("\n\n\nSuccesfully exited 'mycalc_v1' with exit code 0.\n Thanks for using a program made by @natllux! Hope to see you again soon..")
+	time.sleep(7000)
 	return
 }
