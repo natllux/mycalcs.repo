@@ -4,4 +4,4 @@ This repository contains all of the prototypes of calculators made with the odin
 
 ## Availible versions
 
-- My Calculator Version 1 (_'mycalcs.repo/mycalc_v1'_), the first, most basic calculator of them all.
+- My Calculator Version 1 (_'mycalcs.repo/mycalc_v1'_), the first, most basic calculator of them all. Can do basic operations (+, -, *, /).
