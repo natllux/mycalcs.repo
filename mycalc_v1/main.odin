@@ -44,7 +44,7 @@ main :: proc() {
 			break
 		}
 
-		time.sleep(500)
+		time.sleep(500 * time.Millisecond)
 
 		// Input Process: Second Operand.
 		fmt.println("Enter the second operand:")
@@ -58,7 +58,7 @@ main :: proc() {
 			break
 		}
 
-		time.sleep(500)
+		time.sleep(500 * time.Millisecond)
 
 		// Input Process: Operator.
 		fmt.println("Enter the operator:")
@@ -72,7 +72,7 @@ main :: proc() {
 			break
 		}
 
-		time.sleep(2000)
+		time.sleep(500 * time.Millisecond)
 
 		switch(str_opt) {
 			case "+":
@@ -118,10 +118,12 @@ main :: proc() {
 		else {
 			fmt.printf("Result: %f", operation_res)
 		}
+
+		time.sleep(1000 * time.Millisecond)
 	}
 
 	// Exit Message
 	fmt.print("\n\n\nSuccesfully exited 'mycalc_v1' with exit code 0.\n Thanks for using a program made by @natllux! Hope to see you again soon..")
-	time.sleep(7000)
+	time.sleep(4000 * time.Millisecond)
 	return
 }
